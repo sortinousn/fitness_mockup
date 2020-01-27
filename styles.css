@@ -1,0 +1,100 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.top-image {
+  background-image: url("./assets/phone_w_bg.png");
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top-nav {
+  float: right;
+}
+
+.top-text {
+  margin-left: 10%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button1 {
+  background-color: #00749a; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 220px;
+  height: 55px;
+  border-radius: 3px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+#title-desc {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #158bad;
+  font-size: 20px;
+}
+
+#desc {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+}
+
+.mid-grid {
+  margin-left: 10%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid;
+  border-color: #36bde6;
+}
+
+.numbered {
+  display: inline;
+  border-bottom: 5px solid red;
+}
+
+.mid-grid h1 {
+  font-family: "Roboto Slab", serif;
+  color: #00749a;
+}
+
+.mid-grid span {
+  font-family: "Roboto Slab", serif;
+  color: #36bde6;
+}
+
+.mid-grid p {
+  font-family: "Roboto Slab", serif;
+  color: grey;
+  font-size: 18px;
+}
+
+.columnDivider {
+  border-right: 1px solid #dedede;
+  margin-right: 30px; /* size of gutter */
+  border-color: #36bde6;
+}
+
+.features {
+  background-color: #f6f9f9;
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
