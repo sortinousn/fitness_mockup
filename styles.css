@@ -1,3 +1,15 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
 html,
 body {
   height: 100%;
@@ -5,6 +17,7 @@ body {
 }
 
 .top-image {
+  margin:0;
   background-image: url("./assets/phone_w_bg.png");
   height: 100%;
   /* Center and scale the image nicely */
@@ -15,7 +28,33 @@ body {
 
 .top-nav {
   float: right;
+  margin-right: 100px;
+  margin-top:30px;
+
 }
+
+.top-nav a{
+
+  font-family: "Open Sans", sans-serif;
+color: #7bceed;
+padding-left: 20px;
+text-decoration: none;
+
+
+}
+
+
+.top-nav a:first-child{
+
+  font-family: "Open Sans", sans-serif;
+color: white;
+padding-left: 20px;
+text-decoration: none;
+
+
+}
+
+
 
 .top-text {
   margin-left: 10%;
@@ -55,10 +94,7 @@ body {
 }
 
 .mid-grid {
-  margin-left: 10%;
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   border-bottom: 1px solid;
   border-color: #36bde6;
 }
@@ -68,9 +104,18 @@ body {
   border-bottom: 5px solid red;
 }
 
+.grid-margin{
+
+margin-left: 80px;
+display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
 .mid-grid h1 {
   font-family: "Roboto Slab", serif;
   color: #00749a;
+  font-size: 30px;
 }
 
 .mid-grid span {
@@ -88,13 +133,266 @@ body {
   border-right: 1px solid #dedede;
   margin-right: 30px; /* size of gutter */
   border-color: #36bde6;
+  padding-bottom: 60px;
+  font-size: 20px;
 }
 
 .features {
   background-color: #f6f9f9;
-  height: 100%;
+  height: 900px;
   /* Center and scale the image nicely */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url("./assets/phone_screens.png");
+  background-size: 700px 600px;
+  background-position: 600px 280px;
+
+
 }
+
+.features-header h1 {
+  font-family: "Roboto Slab", serif;
+  color:#36bde6;
+  font-weight: 20;
+  font-size: 45px;
+
+}
+
+.features-header{
+  display: flex;
+  justify-content: center;
+
+padding-top: 50px;
+justify-content: center;
+
+
+}
+
+.features-header span {
+
+  font-weight: bold;
+
+
+}
+
+.features hr{
+
+border: 1px solid #36bde6;
+width: 180px;
+margin-left: 45%;
+margin-top: 20px;
+
+}
+
+
+.fa-trophy {
+  margin-left: 90px;
+  color: white;
+      color: red;
+
+  border-width: 3px;
+  border-style: solid;
+  border-color: red;
+  border-image: initial;
+  border-radius: 50% 50% 50% 50%; 
+  padding: 25px 25px 25px 25px; 
+  font-weight:bold;
+  -webkit-text-stroke: 2px red;
+  -webkit-text-fill-color: transparent;
+
+
+}
+
+.fa-utensils {
+  margin-left: 90px;
+  color: white;
+      color: purple;
+
+  border-width: 3px;
+  border-style: solid;
+  border-color: purple;
+  border-image: initial;
+  border-radius: 50% 50% 50% 50%; 
+  padding: 25px 30px 25px 30px; 
+  font-weight:bold;
+  -webkit-text-stroke: 2px purple;
+  -webkit-text-fill-color: transparent;
+
+
+
+}
+
+
+.fa-dumbbell {
+  margin-left: 90px;
+  color: white;
+      color: green;
+
+  border-width: 3px;
+  border-style: solid;
+  border-color: green;
+  border-image: initial;
+  border-radius: 50% 50% 50% 50%; 
+  padding: 24px 19px 24px 19px; 
+  font-weight:bold;
+  -webkit-text-stroke: 2px green;
+  -webkit-text-fill-color: transparent;
+
+
+
+}
+
+
+
+.icons{
+
+
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.carousel {
+
+
+justify-content: center;
+padding-top: 50px;
+justify-content: center;
+height: 500px;
+}
+
+.carousel hr{
+
+  border: 1px solid #36bde6;
+  width: 180px;
+margin-left: 45%;
+margin-top: 20px;
+  }
+
+
+
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+
+  }
+  .wrapper div {
+    overflow: hidden;
+  }
+  .wrapper img {
+    display: block;
+    width: auto;
+    height: 30%;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .bottom {
+
+background-color: #36bde6;
+height: 400px;
+  /* Center and scale the image nicely */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  }
+
+
+  .bottom{
+    display: flex;
+    flex-direction: row;
+justify-content: center;
+align-items: center;
+
+
+
+
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+text-align: center;
+border-right: solid #7bceed 1px;
+
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+  .column h1  {
+
+font-size: 80px;
+color: white;
+font-family: "Roboto Slab", serif;
+vertical-align: middle;
+
+
+
+
+  }
+
+
+
+  .column h2  {
+
+    font-size: 20px;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    color: #00749a;
+    font-family: "Open Sans", sans-serif;
+
+    
+      }
+
+
+      footer{
+
+        background-color: #05212C;
+        height: 150px;
+        color: #81888B;
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+
+      }
+
+
+      footer   {
+        padding-top: 60px;
+        padding-left: 60px;
+
+
+      }
+
+
+      .right-links  {
+        float: right;
+        padding-right: 60px;
+
+
+      }
+    
+      .right-links a  {
+
+        padding-left: 20px;
+        color: #81888B;
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+        text-decoration: none;
+
+
+
+      }
+    
+
